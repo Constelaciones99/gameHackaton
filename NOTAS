@@ -1,0 +1,11 @@
+#PARA QUE PUEDAS VISUALIZAR EL JUEGO O SU AVANCE SIGUE LOS SIGUIENTES PASOS
+1.-Descarga este proyecto
+2.-(*)Ingresa a la carpeta y abre una terminal desde allí o abre una terminal cmd/powershell y escribe cd "la_ruta_a_tu_carpeta_creada". ejem: cd "C:\Users\mmois\Documents\gameHackaton"
+3.- Ahora ejecuta: 
+          npm install --save three
+#NOTA:si te sale error es porque seguro no tienes instalado node.js. Ingresa a la pagina oficial de Node.js, descarga e instala y luego ejecuta nuevamente.
+4.- Despues:
+          npm install --save-dev vite
+5.- Por ultimo, para visualizar el juego:
+          npm run dev
+#NOTA: si no te da prueba con->   npx vite
