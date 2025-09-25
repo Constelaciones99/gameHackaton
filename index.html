@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Area - Genio de la Agricultura</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="gameContainer"></div>
+    
+    <div id="popupSystem"></div>
+    
+    <!-- Barra Superior Izquierda - Recursos -->
+    <div id="topHud" class="top-hud">
+        <div class="resource-item">
+            <i class="fas fa-coins gold-icon"></i>
+            <span id="coinCount">100</span>
+        </div>
+        <div class="resource-item">
+            <i class="fas fa-seedling seed-icon"></i>
+            <span id="seedCount">5</span>
+        </div>
+        <div class="resource-item">
+            <i class="fas fa-smile happiness-icon"></i>
+            <span id="happinessPercent">100%</span>
+        </div>
+        <div class="resource-item">
+            <i class="fas fa-clock time-icon"></i>
+            <span id="gameTime">06:00 AM</span>
+        </div>
+    </div>
+    
+    <!-- Barra Lateral Derecha - Iconos -->
+    <div id="sidebar" class="sidebar">
+        <div class="icon-group">
+            <div class="icon-tool" data-tool="user" title="Datos del Usuario">
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="icon-tool" data-tool="environment" title="Condiciones Ambientales">
+                <i class="fas fa-globe-americas"></i>
+            </div>
+            <div class="icon-tool" data-tool="terrain" title="Información del Terreno">
+                <i class="fas fa-flag"></i>
+            </div>
+            <div class="icon-tool" data-tool="maps" title="Mapas Disponibles">
+                <i class="fas fa-map"></i>
+            </div>
+            <div class="icon-tool" data-tool="inventory" title="Inventario y Tienda">
+                <i class="fas fa-warehouse"></i>
+            </div>
+            <div class="icon-tool" data-tool="progress" title="Progreso y Estadísticas">
+                <i class="fas fa-chart-line"></i>
+            </div>
+        </div>
+        
+        <!-- Panel de Contenido -->
+        <div id="toolPanel" class="tool-panel">
+            <div class="panel-header">
+                <h3 id="panelTitle">Bienvenido</h3>
+                <button id="closePanel" class="close-btn"><i class="fas fa-times"></i></button>
+            </div>
+            <div id="panelContent" class="panel-content">
+                <p>Selecciona una herramienta para comenzar</p>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="/src/js/app/main.js"></script>
+</body>
+</html>
